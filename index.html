@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan 1 - Form Registrasi</title>
+</head>
+<body>
+
+    <h3>Form Registrasi</h3>
+    
+    <label>Nama Depan:</label>
+    <input type="text" id="namaDepan" placeholder="Masukkan nama depan"><br><br>
+
+    <label>Nama Belakang:</label>
+    <input type="text" id="namaBelakang" placeholder="Masukkan nama belakang"><br><br>
+
+    <button onclick="kirim()">Submit</button>
+
+    <script>
+        function kirim() {
+            let depan = document.getElementById("namaDepan").value;
+            let belakang = document.getElementById("namaBelakang").value;
+            console.log("Nama Lengkap: " + depan + " " + belakang);
+        }
+    </script>
+
+</body>
+</html>
